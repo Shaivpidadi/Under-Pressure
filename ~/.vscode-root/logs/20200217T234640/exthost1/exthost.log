@@ -1,0 +1,36 @@
+[2020-02-17 23:47:00.503] [exthost] [info] extension host started
+[2020-02-17 23:47:00.535] [exthost] [info] ExtensionService#_doActivateExtension Arjun.swagger-viewer {"startup":false,"activationEvent":"onLanguage:plaintext"}
+[2020-02-17 23:47:00.535] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/solulab456/.vscode/extensions/arjun.swagger-viewer-2.2.2/out/index
+[2020-02-17 23:47:09.804] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"activationEvent":"onLanguage:css"}
+[2020-02-17 23:47:09.804] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/css-language-features/client/dist/cssMain
+[2020-02-17 23:47:09.999] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"activationEvent":"onLanguage:css"}
+[2020-02-17 23:47:09.999] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/extension
+[2020-02-17 23:47:10.118] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2020-02-17 23:47:10.118] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-02-17 23:47:10.236] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2020-02-17 23:47:10.236] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2020-02-17 23:47:10.486] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2020-02-17 23:47:10.486] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2020-02-17 23:47:10.633] [exthost] [info] ExtensionService#_doActivateExtension chenxsan.vscode-standardjs {"startup":true,"activationEvent":"*"}
+[2020-02-17 23:47:10.633] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/solulab456/.vscode/extensions/chenxsan.vscode-standardjs-1.2.3/client/out/extension
+[2020-02-17 23:47:11.976] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2020-02-17 23:47:11.976] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/solulab456/.vscode/extensions/dbaeumer.vscode-eslint-1.9.1/client/out/extension
+[2020-02-17 23:47:12.074] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"activationEvent":"*"}
+[2020-02-17 23:47:12.075] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/solulab456/.vscode/extensions/eamodio.gitlens-10.2.1/dist/extension
+[2020-02-17 23:47:12.276] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2020-02-17 23:47:12.276] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/solulab456/.vscode/extensions/esbenp.prettier-vscode-3.20.0/dist/extension
+[2020-02-17 23:47:12.814] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"activationEvent":"workspaceContains:package.json"}
+[2020-02-17 23:47:12.814] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/npm/dist/main
+[2020-02-17 23:47:13.476] [exthost] [info] eager extensions activated
+[2020-02-17 23:53:32.646] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:javascriptreact"}
+[2020-02-17 23:53:32.647] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2020-02-17 23:53:32.911] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.vscode-typescript-tslint-plugin {"startup":false,"activationEvent":"onLanguage:javascriptreact"}
+[2020-02-17 23:53:32.911] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/solulab456/.vscode/extensions/ms-vscode.vscode-typescript-tslint-plugin-1.2.3/out/index.js
+[2020-02-17 23:58:11.571] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"activationEvent":"onLanguage:html"}
+[2020-02-17 23:58:11.571] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain
+[2020-02-18 00:08:17.287] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:json"}
+[2020-02-18 00:08:17.287] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/configuration-editing/dist/extension
+[2020-02-18 00:08:17.337] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:json"}
+[2020-02-18 00:08:17.337] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/extension-editing/dist/extension
+[2020-02-18 00:08:17.443] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:json"}
+[2020-02-18 00:08:17.443] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain

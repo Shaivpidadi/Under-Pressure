@@ -1,0 +1,3 @@
+[2020-02-17 23:47:00.400] [renderer1] [error] net::ERR_NAME_RESOLUTION_FAILED: Error: net::ERR_NAME_RESOLUTION_FAILED
+[2020-02-17 23:47:09.587] [renderer1] [warning] UNRESPONSIVE extension host, 'Arjun.swagger-viewer' took 100% of 5126.141ms, saved PROFILE here: '/tmp/exthost-017ea7.cpuprofile' [{"id":"Arjun.swagger-viewer","total":5119845,"percentage":100},{"id":"gc","total":5793,"percentage":0}]
+[2020-02-17 23:47:09.592] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
