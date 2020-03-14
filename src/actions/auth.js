@@ -5,7 +5,8 @@ import {
   SHOW_MESSAGE_SUCCESS,
   ON_HIDE_LOADER,
   ON_SHOW_LOADER,
-  STATUS_CLEAN
+  STATUS_CLEAN,
+  SIGNUP_USER
 } from '../constants/ActionTypes'
 
 export const userSignIn = (user) => {
@@ -51,5 +52,13 @@ export const hideAuthLoader = () => {
 export const statusClean = () => {
   return {
     type: STATUS_CLEAN
+  }
+}
+
+export const userSignUp = (authUser) => {
+  console.log('in User Signup Action ->', authUser)
+  return {
+    type: SIGNUP_USER,
+    payload: authUser
   }
 }
