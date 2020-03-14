@@ -10,7 +10,6 @@ const initialState = {
 }
 
 const AuthReducer = (state = initialState, action) => {
-  console.log(action.type)
   switch (action.type) {
     case actionTypes.SIGNIN_USER_SUCCESS:
       return {
@@ -19,9 +18,18 @@ const AuthReducer = (state = initialState, action) => {
         authUser: action.payload
       }
     case actionTypes.SHOW_MESSAGE: {
+      console.log(' IN SHOW_MESSAGE')
       return {
         ...state,
         alertMessage: action.payload,
+        loader: false
+      }
+    }
+    case actionTypes.SHOW_MESSAGE_SUCCESS: {
+      return {
+        ...state,
+        alertMessageSuccess: action.payload,
+        showMessageSuccess: true,
         loader: false
       }
     }

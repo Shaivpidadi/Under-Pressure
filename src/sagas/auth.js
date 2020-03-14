@@ -6,14 +6,16 @@ import axios from '../services'
 
 function* signIn (action) {
   try {
-    const { user, password } = action.payload
+    const { email, password } = action.payload
+    console.log({email})
+    console.log({password})
     let response = yield axios
       .post('/login', {
         headers: {
           'Content-Type': 'application/json'
         },
-        email: user,
-        password: password
+        email,
+        password
       })
 
     console.log({ response })
@@ -44,6 +46,7 @@ function* signIn (action) {
     }
   } catch (error) {
     console.log('In Catch', error)
+    yield put(actions.showAuthMessage('qwerty'))
     // yield put(actions.modalOpen({ message: response.response.data.message }))
   }
 }

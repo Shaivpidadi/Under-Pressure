@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 import '../Authentication.css'
 import { connect } from 'react-redux'
-import { toast } from 'react-toastify'
 import Input from '../../Generic/Input/Input'
 import {
   userSignIn,
@@ -29,9 +30,9 @@ class Login extends Component {
         this.props.hideMesssge()
       }, 100)
     }
-
+    console.log('AuthUser', this.props.authUser)
     if(this.props.authUser !== null) {
-      this.props.history.push('/')
+      // this.props.history.push('/')
     }
   }
 
@@ -41,25 +42,14 @@ class Login extends Component {
     });
   };
 
+  componentWillUnmount () {
+    this.props.statusClean()
+  }
+
   submitHandler = (e) => {
     e.preventDefault()
     const { email, password } = this.state;
     const { showMessage, loader, alertMessage } = this.props;
-    // const email= this.state.email
-    // const password= this.state.password
-
-    // if(user==='') {
-    //   console.log('User blank')
-    //   this.props.modalOpen({ message: "Please enter email/phone no." });
-    // } else if (password === '') {
-    //   console.log('Password blank')
-    //   this.props.modalOpen({ message: "Please enter password" });
-    // }
-
-    // if (user !== '' && password !== '') {
-    //   this.props.signInRequest({user, password})
-    // }
-
     if (email.trim() === '') {
           toast.error('Email cannot be blank', {
             toastId: 'offlinePayment',
@@ -68,7 +58,8 @@ class Login extends Component {
             position: toast.POSITION.TOP_RIGHT
           })
         this.props.showAuthMessage('Email cannot be blank')
-      } else if (password == '') {
+      } else if (password === '') {
+        console.log('blank password')          
           toast.error('Password cannot be blank', {
             toastId: 'offlinePayment',
             hideProgressBar: true,
@@ -85,8 +76,11 @@ class Login extends Component {
           })
         this.props.showAuthMessage('Password must be atleast 8 characters long')
       } else {
-          // this.props.showAuthLoader()
+          this.props.showAuthLoader()
         this.props.userSignIn({ email, password })
+        if(this.props.authUser !== null) {
+          // this.props.history.push('/')
+        }
       }
   }
 
@@ -113,7 +107,6 @@ class Login extends Component {
                       value={this.state.email}
                       onChange={(event) => this.setState({ email: event.target.value })}
                       placeholder='Email' />
-                    {/* <input type='email' className='form-control' id='email_address' value='' /> */}
                   </div>
                   <div className='col-12 mb-4'>
                     <label for='password'> Password <span>*</span></label>
@@ -122,10 +115,8 @@ class Login extends Component {
                       value={this.state.password}
                       onChange={(event) => this.setState({ password: event.target.value })}
                       placeholder='Password' />
-                    {/* <input type='password' className='form-control' id='password' value='' /> */}
                   </div>
                   <div className='col-12 checkout-btn mb-30'>
-                    {/* <Link to='/login' className='btn essence-btn'>Login</Link> */}
                     <button 
                       type='submit'
                       className='btn essence-btn'
@@ -147,11 +138,8 @@ class Login extends Component {
   }
 }
 
-const mapStateToProps = ({ auth }) => {
-  // return {
-  //   showModal: state.Auth.showModal,
-  //   signin_success: state.Auth.signin_success
-  // }
+const mapStateToProps = (auth) => {
+  console.log('mapStateToProps ->', auth)
   const { loader, alertMessage, showMessage, authUser } = auth
   return { loader, alertMessage, showMessage, authUser }
 }
